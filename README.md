@@ -88,14 +88,11 @@ HSSlider是一个基于jQuery的图片轮播器，主要用于移动端，提供
 </script>
 ```
 ######NOTE:
-autoplay：是否启用轮播,默认开始；
-
-dealy：轮播时间,毫秒为单位，默认5000毫秒；
-
+autoplay：是否启用轮播,默认开始；<br>
+dealy：轮播时间,毫秒为单位，默认5000毫秒；<br>
 compleation：滚动到下一页时候的回调。function(index, name){} ,index页面索引， name是slider的name属性，由用户指定，用来标识哪一个slider
-；
-aspect_numerator:长宽比的分子；
-
+；<br>
+aspect_numerator:长宽比的分子；<br>
 aspect_denominator:长宽比的分母，aspect_numerator和aspect_denominator需要共同指定才有效。
 
 ####6. 其他
