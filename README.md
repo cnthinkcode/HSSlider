@@ -43,7 +43,7 @@ HSSlider是一个基于jQuery的图片轮播器，主要用于移动端，提供
 ######NOTE:
 最顶层div的class可以随意指定 ul的class也可以随意指定，如果页面有多个HSSlider控件，又需要指定每个slider滚动到那一页时候，可以为ul 指定唯一标识的name。
 
-不要ul li 添加click事件，可以在<li> <!--你的代码--> </li>内部子元素添加click事件。
+不要ul li 添加click事件，可以在```<li> <!--你的代码--> </li>```内部子元素添加click事件。
 
 ####4. 添加CSS代码
 
@@ -89,9 +89,13 @@ HSSlider是一个基于jQuery的图片轮播器，主要用于移动端，提供
 ```
 ######NOTE:
 autoplay：是否启用轮播,默认开始；
+
 dealy：轮播时间,毫秒为单位，默认5000毫秒；
-compleation：滚动到下一页时候的回调。function(index, name){} ,index页面索引， name是slider的name属性，由用户指定，用来标识哪一个slider；
+
+compleation：滚动到下一页时候的回调。function(index, name){} ,index页面索引， name是slider的name属性，由用户指定，用来标识哪一个slider
+；
 aspect_numerator:长宽比的分子；
+
 aspect_denominator:长宽比的分母，aspect_numerator和aspect_denominator需要共同指定才有效。
 
 ####6. 其他
