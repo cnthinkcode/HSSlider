@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <title>HSSlider Demo</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/hsslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<br>
+<br>
+<h4>将父视图的宽度设置成百分比，当窗口变化时，slider根据父视图的大小重新计算大小</h4>
+<!--示例1-->
+<div class="s-w-t"> 
+  <ul class="slider" name="top">
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://www.rapidbbs.cn/data/attachment/forum/201412/29/095446qhz3pujh3hnanr7j.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://img4.imgtn.bdimg.com/it/u=95641588,189686562&fm=21&gp=0.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://pic.58pic.com/58pic/16/41/19/15D58PICxGZ_1024.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://pic.qiantucdn.com/58pic/18/55/98/82p58PICG7Q_1024.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://www.rapidbbs.cn/data/attachment/forum/201412/29/095437dd7d4mdbhjeqiibh.jpg"></a></li>
+  </ul>
+</div>
+<!--示例1-->
+<br>
+<br>
+<br>
+<h4>将父视图的宽度固定</h4>
+<!--示例2-->
+<div class="s-w-b"> 
+  <ul class="slider" name="bottom">
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://www.rapidbbs.cn/data/attachment/forum/201412/29/095446qhz3pujh3hnanr7j.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://img4.imgtn.bdimg.com/it/u=95641588,189686562&fm=21&gp=0.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://pic.58pic.com/58pic/16/41/19/15D58PICxGZ_1024.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://pic.qiantucdn.com/58pic/18/55/98/82p58PICG7Q_1024.jpg"></a></li>
+     <li> <a href="http://www.thinkcode.cn/"><img src="http://www.rapidbbs.cn/data/attachment/forum/201412/29/095437dd7d4mdbhjeqiibh.jpg"></a></li>
+  </ul>
+</div>
+<!--示例2-->
+
+<script type="text/javascript">
+
+    function scroll_to_page(index, name) {
+        console.warn(index + " " + name);
+    };
+
+    $(function(){
+        $(".slider").hsslider({
+            autoplay:true,
+            dealy:5000,
+            compleation:scroll_to_page,
+            aspect_numerator: 16,
+            aspect_denominator: 9
+        });
+    });
+
+</script>
+</body>
+</html>
